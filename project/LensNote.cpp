@@ -17,13 +17,17 @@ bool isSupportedImage(const std::filesystem::path &p) {
 
 int main(int argc, char *args[])
 {
+    system("chcp 65001");
+    
     using namespace std;
     using namespace std::filesystem;
+
+    
 
     if( argc < 2 )
     {
         cout << "请将图片或者图片目录拖到应用上运行。"<<std::endl;
-        std::cin.get();
+        
         return EXIT_FAILURE;
     }
 
@@ -82,13 +86,13 @@ int main(int argc, char *args[])
         }
     }
 
-    std::cin.get();
+    
 
     LensNote lensNote;
 
     lensNote.Init();
 
-    
+    lensNote.ProcessImage(ProcessQueue);
 
     
     // 成功退出

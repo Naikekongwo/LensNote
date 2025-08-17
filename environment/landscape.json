@@ -1,0 +1,17 @@
+{
+    "Documentation": {
+        "BorderWidth": 0.1,
+        "ExtraHeight": 0.15
+    },
+    "Infos": {
+        "Logo": {
+            "Height" : 0.045,
+            "PaddingTop" : 0.0375
+        },
+        "Text" : {
+            "PaddingTop" : 0.0365,
+            "Content" : "{ExTime} {FStop} {ISO}",
+            "Height" : 0.0325
+        }
+    }
+}

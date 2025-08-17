@@ -2,7 +2,12 @@
 
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_ttf.h>
+#include <rapidjson/document.h>
+#include <easyexif/exif.h>
 
+#include <iostream>
+#include <string>
+#include <fstream>
 #include <filesystem>
 #include <vector>
 
@@ -20,5 +25,8 @@ class LensNote
     private:
 
     SDL_Surface* LoadSurfaceFrom(const char* filename);
+
+    bool SaveSurfaceAsJPG(SDL_Surface* surface, const char* filename, int quality);
+    
 
 };
